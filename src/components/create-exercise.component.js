@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-
+import DatePicker from 'react-datepicker';
+import "react-datepicker/dist/react-datepicker.css";
 export default class CreateExercises extends Component {
     constructor(props) {
         super(props);
@@ -59,11 +60,7 @@ export default class CreateExercises extends Component {
 
         window.location = '/';
     }
-    onChangeUsername(e) {
-        this.setState({
-            username: e.target.value
-        });
-    }
+    
     render() {
         return (
             <div>
